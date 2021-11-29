@@ -13,6 +13,7 @@ namespace Bg.WaypointSystemForTimeline {
         }
 
         [SerializeField] public GameObject target;
+        [SerializeField] private bool _isLookTangent = false;
         [SerializeField, HideInInspector] private List<Point> _wayPoints = new List<Point>();
         
         public IReadOnlyList<Point> wayPoints => _wayPoints;
@@ -23,6 +24,10 @@ namespace Bg.WaypointSystemForTimeline {
             }
             Vector3 p = GetPoint(t);
             target.transform.position = p;
+            if (_isLookTangent) {
+                Vector3 tangent = CalcBezierTangent(t);
+                target.transform.LookAt(p + tangent);
+            }
         }
 
         public void CalcTInWayPoints() {
@@ -108,6 +113,13 @@ namespace Bg.WaypointSystemForTimeline {
             Vector3 startTan = start + startPoint.nextTangent;
             Vector3 endTan = end + endPoint.backTangent;
             return CalcBezierPoint(start, end, startTan, endTan, tNorm);
+        }
+
+        public Vector3 CalcBezierTangent(float t, float delta = 0.005f) {
+            var point = GetPoint(t);
+            var deltaPoint = GetPoint(t + delta);
+            var tangent = deltaPoint - point;
+            return tangent.normalized;
         }
 
         public static Vector3 CalcBezierPoint(Vector3 start, Vector3 end, Vector3 startTan, Vector3 endTan, float t) {
