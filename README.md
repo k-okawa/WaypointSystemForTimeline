@@ -1,4 +1,5 @@
 # WaypointSystemForTimeline
+[[日本語](https://github.com/k-okawa/WaypointSystemForTimeline/blob/master/README.ja.md)]
 
 It is possible to complement the track (Bezier curve) on the Timeline.
 
