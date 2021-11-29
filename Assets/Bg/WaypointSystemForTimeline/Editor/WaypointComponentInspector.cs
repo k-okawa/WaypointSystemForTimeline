@@ -111,7 +111,7 @@ namespace Bg.WaypointSystemForTimeline.Editor {
             
             DrawWayPointsList();
     
-            if (GUILayout.Button("Tを自動計算")) {
+            if (GUILayout.Button("Calculate T Automatically")) {
                 component.CalcTInWayPoints();
                 serializedObject.ApplyModifiedProperties();
             }
@@ -131,11 +131,11 @@ namespace Bg.WaypointSystemForTimeline.Editor {
                     var nextTangentProp = elementProp.FindPropertyRelative("nextTangent");
                     var tProp = elementProp.FindPropertyRelative("t");
                     EditorGUI.LabelField(GetRowRect(rect, 0), $"Index{index}", EditorStyles.boldLabel);
-                    EditorGUI.PropertyField(GetRowRect(rect, 1), positionProp, new GUIContent("    Position", "GameObjectの位置からのオフセット"));
-                    EditorGUI.PropertyField(GetRowRect(rect, 2), backTangentProp, new GUIContent("    Back Tangent", "Positionからのオフセット"));
-                    EditorGUI.PropertyField(GetRowRect(rect, 3), nextTangentProp, new GUIContent("    NextTangent", "Positionからのオフセット"));
-                    EditorGUI.PropertyField(GetRowRect(rect, 4), tProp, new GUIContent("    T", "補間の目安になる値"));
-                    EditorGUI.LabelField(GetRowRect(rect, 5), $"編集", EditorStyles.boldLabel);
+                    EditorGUI.PropertyField(GetRowRect(rect, 1), positionProp, new GUIContent("    Position", "offset from GameObject position"));
+                    EditorGUI.PropertyField(GetRowRect(rect, 2), backTangentProp, new GUIContent("    Back Tangent", "offset from Position"));
+                    EditorGUI.PropertyField(GetRowRect(rect, 3), nextTangentProp, new GUIContent("    NextTangent", "offset from Position"));
+                    EditorGUI.PropertyField(GetRowRect(rect, 4), tProp, new GUIContent("    T", "value for interpolation"));
+                    EditorGUI.LabelField(GetRowRect(rect, 5), $"Editor", EditorStyles.boldLabel);
                     var buttonRect = GetRowRect(rect, 6);
                     float buttonWidth = rect.width / 3f;
                     var leftRect = new Rect(buttonRect.x, buttonRect.y, buttonWidth, buttonRect.height);
