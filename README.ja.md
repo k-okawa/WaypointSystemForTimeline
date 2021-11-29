@@ -1,5 +1,5 @@
 # WaypointSystemForTimeline
-[[英語](https://github.com/k-okawa/WaypointSystemForTimeline/blob/master/README.md)]
+[[English](https://github.com/k-okawa/WaypointSystemForTimeline/blob/master/README.md)]
 
 Timeline上で軌跡(ベジェ曲線)の補完を行うことが可能です。
 
