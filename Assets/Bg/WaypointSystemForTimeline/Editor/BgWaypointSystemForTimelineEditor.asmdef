@@ -1,7 +1,8 @@
 {
     "name": "BgWaypointSystemForTimelineEditor",
     "references": [
-        "GUID:64e3e3818e504482e97303b7cdab6b15"
+        "GUID:64e3e3818e504482e97303b7cdab6b15",
+        "GUID:f06555f75b070af458a003d92f9efb00"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
