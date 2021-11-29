@@ -13,8 +13,7 @@ https://github.com/k-okawa/WaypointSystemForTimeline.git?path=Assets/Bg/Waypoint
 ```
 ## 使い方
 
-![Screen Shot 2021-11-29 at 11 31 40](https://user-images.githubusercontent.com/49301086/143799565-1bacbc80-30b5-4d54-a6bf-811585a45231.png)
-
+![Screen Shot 2021-11-29 at 12 27 13](https://user-images.githubusercontent.com/49301086/143804109-548ffdcb-884b-422c-8b63-23f8c888840a.png)
 ### 1.WaypointComponentを空オブジェクトにAddComponentする
 
 ### 2.Targetに移動させたいGameObjectを設定
@@ -43,4 +42,18 @@ IsLookTangentにチェックを入れることで、GameObjectの向きがベジ
 またInspectorをロックしている状態で、Scene上のPointの位置をクリックするとPositionの編集が可能です。
 
 ### 4.補間値の自動計算
-手動でTの値を入力しても大丈夫ですが、Tを自動計算を押下すると曲線の長さに応じて均等に割り振られます。
+手動でTの値を入力しても大丈夫ですが、"Calculate T Automatically"を押下すると曲線の長さに応じて均等に割り振られます。
+
+### 5.Timelineの設定
+#### 5-1.トラックを作成
+
+<img width="807" alt="Screen Shot 2021-11-29 at 12 32 24" src="https://user-images.githubusercontent.com/49301086/143804555-aa6f5f37-30d6-4bfe-8c38-1aa2c9e11f41.png">
+
+#### 5-2.WaypointComponentをセット
+
+<img width="1791" alt="Screen Shot 2021-11-29 at 12 35 08" src="https://user-images.githubusercontent.com/49301086/143804802-d5c08b4f-b204-4f83-b94e-14048bc4d90c.png">
+
+### 5-3.クリップを作成
+
+
+<img width="751" alt="Screen Shot 2021-11-29 at 12 36 28" src="https://user-images.githubusercontent.com/49301086/143804856-1d341945-95ed-4044-874d-7ccdb5ec2a9e.png">
