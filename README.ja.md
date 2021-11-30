@@ -7,11 +7,19 @@ Timeline上で軌跡(ベジェ曲線)の補完を行うことが可能です。
 
 ## インストール
 ### PackageManager
+#### GitURLで追加
 Window/Package Managerを開き、add package from git URL...で以下を入力して追加してください。
 
 ```
 https://github.com/k-okawa/WaypointSystemForTimeline.git?path=Assets/Bg/WaypointSystemForTimeline
 ```
+
+#### OpenUPMで追加
+
+```
+openupm add com.bg.waypointystemfortimeline
+```
+
 ## 使い方
 
 ![Screen Shot 2021-11-29 at 12 27 13](https://user-images.githubusercontent.com/49301086/143804109-548ffdcb-884b-422c-8b63-23f8c888840a.png)
