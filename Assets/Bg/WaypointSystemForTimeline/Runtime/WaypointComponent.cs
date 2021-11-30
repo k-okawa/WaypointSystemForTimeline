@@ -123,10 +123,28 @@ namespace Bg.WaypointSystemForTimeline {
         }
 
         public static Vector3 CalcBezierPoint(Vector3 start, Vector3 end, Vector3 startTan, Vector3 endTan, float t) {
-            Vector3 s = Vector3.Lerp(start, startTan, t);
             Vector3 m = Vector3.Lerp(startTan, endTan, t);
-            Vector3 e = Vector3.Lerp(endTan, end, t);
-
+            if (start == startTan && end == endTan) {
+                // Liner
+                return m;
+            }
+            
+            Vector3 s = start;
+            if (start != startTan) {
+                s = Vector3.Lerp(start, startTan, t);
+            }
+            Vector3 e = end;
+            if (e != endTan) {
+                e = Vector3.Lerp(endTan, end, t);
+            }
+            
+            if (start == startTan) {
+                m = Vector3.Lerp(endTan, end, t);
+            } 
+            else if (end == endTan) {
+                m = Vector3.Lerp(start, startTan, t);
+            }
+            
             Vector3 p1 = Vector3.Lerp(s, m, t);
             Vector3 p2 = Vector3.Lerp(m, e, t);
 
