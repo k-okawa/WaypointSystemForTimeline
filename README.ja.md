@@ -1,6 +1,8 @@
 # WaypointSystemForTimeline
 [[English](https://github.com/k-okawa/WaypointSystemForTimeline/blob/master/README.md)]
 
+[![openupm](https://img.shields.io/npm/v/com.littlebigfun.addressable-importer?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.littlebigfun.addressable-importer/)
+
 Timeline上で軌跡(ベジェ曲線)の補完を行うことが可能です。
 
 ![Screen Shot 2021-11-29 at 11 28 30](https://user-images.githubusercontent.com/49301086/143799354-433e3214-bd28-4a22-a105-77f4bce7dc58.png)
