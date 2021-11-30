@@ -1,17 +1,25 @@
 # WaypointSystemForTimeline
 [[日本語](https://github.com/k-okawa/WaypointSystemForTimeline/blob/master/README.ja.md)]
 
-It is possible to complement the track (Bezier curve) on the Timeline.
+Possible to complement the track (Bezier curve) on the Timeline.
 
 ![Screen Shot 2021-11-29 at 11 28 30](https://user-images.githubusercontent.com/49301086/143799354-433e3214-bd28-4a22-a105-77f4bce7dc58.png)
 
 ## Installation
 ### PackageManager
+#### Install via git url
 Open Window/Package Manager, and add package from git URL...
 
 ```
 https://github.com/k-okawa/WaypointSystemForTimeline.git?path=Assets/Bg/WaypointSystemForTimeline
 ```
+
+#### Install via OpenUPM
+
+```
+openupm add com.bg.waypointystemfortimeline
+```
+
 ## How to use
 
 ![Screen Shot 2021-11-29 at 12 27 13](https://user-images.githubusercontent.com/49301086/143804109-548ffdcb-884b-422c-8b63-23f8c888840a.png)
