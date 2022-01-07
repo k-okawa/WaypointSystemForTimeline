@@ -4,7 +4,7 @@
 [![openupm](https://img.shields.io/npm/v/com.littlebigfun.addressable-importer?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.littlebigfun.addressable-importer/)
 
 
-Possible to complement the track (Bezier curve) on the Timeline.
+This package is possible to complement the track (Bezier curve) on the Timeline.
 
 ![Screen Shot 2021-11-29 at 11 28 30](https://user-images.githubusercontent.com/49301086/143799354-433e3214-bd28-4a22-a105-77f4bce7dc58.png)
 
