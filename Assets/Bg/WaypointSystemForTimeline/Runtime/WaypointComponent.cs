@@ -117,7 +117,7 @@ namespace Bg.WaypointSystemForTimeline {
 
         public Vector3 CalcBezierTangent(float t, float delta = 0.005f) {
             var point = GetPoint(t);
-            var deltaPoint = GetPoint(t + delta);
+            var deltaPoint = GetPoint(Mathf.Clamp(t + delta, 0f, 1f));
             var tangent = deltaPoint - point;
             return tangent.normalized;
         }
